@@ -1,3 +1,6 @@
+
+// extends
+
 package POOexercicios;
 
 public class LojaDeGames {
