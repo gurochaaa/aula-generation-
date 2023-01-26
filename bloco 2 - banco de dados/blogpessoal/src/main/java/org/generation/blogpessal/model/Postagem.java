@@ -2,11 +2,13 @@ package org.generation.blogpessal.model;
 
 import java.time.LocalDateTime;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.UpdateTimestamp;
 
 @Entity
 @Table(name = "tb_postagem")
@@ -19,7 +21,8 @@ public class Postagem {
 	private String titulo;
 	
 	private String texto;
-	
+
+    @UpdateTimestamp
 	private LocalDateTime data;
 	
 	public Long getId() {
