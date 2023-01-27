@@ -14,7 +14,7 @@
 	<name>Blog Pessoal </name>
 	<description>Projeto Blog Pessoal desenvolvido no bootcamp da Generation.</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
